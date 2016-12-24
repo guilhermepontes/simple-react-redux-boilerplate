@@ -5,5 +5,18 @@
   "main": "src/index.js",
   "repository": "git@github.com:guilhermepontes/simple-react-redux-boilerplate.git",
   "author": "Guilherme Pontes <guilhermepontes@msn.com>",
-  "license": "The Unlicense"
+  "license": "The Unlicense",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "if-env": "^1.0.0",
+    "lodash": "^4.17.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "redux": "^3.6.0",
+    "whatwg-fetch": "^2.0.1"
+  }
 }
