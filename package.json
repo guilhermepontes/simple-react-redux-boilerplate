@@ -1,0 +1,9 @@
+{
+  "name": "simple-react-redux-boilerplate",
+  "version": "0.0.1",
+  "description": "starter kit for modern react apps",
+  "main": "src/index.js",
+  "repository": "git@github.com:guilhermepontes/simple-react-redux-boilerplate.git",
+  "author": "Guilherme Pontes <guilhermepontes@msn.com>",
+  "license": "The Unlicense"
+}
