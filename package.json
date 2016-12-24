@@ -6,11 +6,25 @@
   "repository": "git@github.com:guilhermepontes/simple-react-redux-boilerplate.git",
   "author": "Guilherme Pontes <guilhermepontes@msn.com>",
   "license": "The Unlicense",
+
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base public/ --history-api-fallback",
+    "start:prod": "webpack && pm2 start server.js",
+
+	"test": "jest",
+
+	"lint": "npm run lint:css && npm run lint:js",
+	"lint:js": "eslint application/",
+	"lint:css": "stylelint ./app/**/*.css"
+  },
+
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "if-env": "^1.0.0",
     "lodash": "^4.17.2",
+    "pm2": "^2.2.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.1",
@@ -36,6 +50,7 @@
     "postcss-loader": "^1.2.1",
     "postcss-scss": "^0.4.0",
     "stylelint": "^7.7.0",
+    "stylelint-scss": "^1.4.1",
     "stylelint-webpack-plugin": "^0.4.2",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0",
