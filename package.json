@@ -5,18 +5,15 @@
   "main": "src/index.js",
   "repository": "git@github.com:guilhermepontes/simple-react-redux-boilerplate.git",
   "author": "Guilherme Pontes <guilhermepontes@msn.com>",
-
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "webpack-dev-server --inline --content-base public/ --history-api-fallback",
-    "start:prod": "webpack && pm2 start server.js",
-
-	"test": "jest",
-
-	"lint": "npm run lint:css && npm run lint:js",
-	"lint:js": "eslint application/",
-	"lint:css": "stylelint ./app/**/*.css"
+    "start:dev": "webpack-dev-server --inline --hot --content-base public/",
+    "start:prod": "NODE_ENV='production' webpack -p && node server.js",
+    "test": "jest",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint application/",
+    "lint:css": "stylelint ./application/**/*.sass --syntax scss"
   },
 
   "dependencies": {
