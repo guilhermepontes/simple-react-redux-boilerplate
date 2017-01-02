@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "repository": "git@github.com:guilhermepontes/simple-react-redux-boilerplate.git",
   "author": "Guilherme Pontes <guilhermepontes@msn.com>",
-  "license": "The Unlicense",
 
+  "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --inline --content-base public/ --history-api-fallback",
