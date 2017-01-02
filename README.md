@@ -1,4 +1,4 @@
-### 🦄 Simple app example  using Webpack, React and Redux
+## 🦄 Simple app example  using Webpack, React and Redux
 
 #### Whats inside?
 - React, Redux, React Router, Redux Logger, Redux Promise Middleware, Redux Thunk
