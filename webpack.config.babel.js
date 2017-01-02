@@ -42,7 +42,7 @@ const webpackConfig = {
     ]
   },
 
-  devtool: isProd? 'cheap-module-source-map' : 'cheap-module-eval-source-map',
+  devtool: isProd ? 'cheap-module-source-map' : 'cheap-module-eval-source-map',
 
   devServer: {
     historyApiFallback: !isProd
