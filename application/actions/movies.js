@@ -15,7 +15,6 @@ const fetchMoviesByGenre = (genreId) => {
       })
     })
   }
-
 }
 
 export { fetchMoviesByGenre }
