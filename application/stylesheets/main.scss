@@ -1,0 +1,15 @@
+/* Shared */
+@import "./shared/_colors.scss";
+@import "./shared/_globals.scss";
+@import "./shared/_header.scss";
+
+/* Components */
+
+// Home
+@import "./components/home/main.scss";
+@import "./components/home/genre-select.scss";
+@import "./components/home/movie-list.scss";
+@import "./components/home/movie-item.scss";
+
+// Not Found
+@import "./components/not-found/main.scss";

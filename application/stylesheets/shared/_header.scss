@@ -1,0 +1,28 @@
+.header {
+  margin-bottom: 25px;
+
+  &__title, &__nav {
+    display: inline-block;
+  }
+
+  &__title {
+    margin-right: 20px;
+  }
+
+  &__nav-item {
+    display: inline-block;
+  }
+
+  &__nav-link {
+    margin: 0 8px;
+    display: block;
+    padding: 4px 8px;
+    background: $link_background;
+    border-radius: 4px;
+  }
+
+  &__nav-link:hover, &__nav-link--active {
+    background: $link_hover;
+    color: $link_background;
+  }
+}

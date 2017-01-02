@@ -1,0 +1,18 @@
+.movie-list {
+  &__item {
+    margin: 10px 10px 0 0;
+    float: left;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__name {
+    display: inline-block;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

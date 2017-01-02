@@ -1,0 +1,64 @@
+* {
+  outline: none;
+}
+
+body {
+  padding: 10px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: $base;
+  background: $background;
+}
+
+.app-root {
+  width: 1000px;
+}
+
+a, button {
+  /* stylelint-disable-next-line declaration-property-value-blacklist */
+  transition: 0.2s all;
+}
+
+button {
+  /* stylelint-disable-next-line declaration-property-value-blacklist */
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+a:hover {
+  color: $link_hover;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+ul, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
