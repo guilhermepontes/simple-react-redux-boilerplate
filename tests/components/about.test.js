@@ -7,9 +7,9 @@ import AboutComponent from '../../application/components/about/AboutComponent'
 
 context('<AboutComponent />', () => {
   describe('Content', () => {
-    xit('should render the about text', () => {
+    it('should render the about text', () => {
       const wrapper = shallow(<AboutComponent />)
-      expect(wrapper.text()).toEqual('About')
+      expect(wrapper.text()).toContain('About')
     })
   })
 })
