@@ -5,7 +5,7 @@ const fetchGenres = () => {
   const apiUrl = API_URL
   const apiKey = API_KEY
 
-  let api_endpoint = `${apiUrl}/genre/movie/list?api_key=${apiKey}&language=en-US`
+  let api_endpoint = `${apiUrl}/genre/movie/list?api_key=${apiKey}`
 
   return {
     type: 'FETCH_GENRES',

@@ -3,11 +3,8 @@ var path = require('path')
 var compression = require('compression')
 
 var app  = express()
-var port = 8080
 
-app.use(
-  compression()
-)
+app.use(compression())
 
 app.use(express.static('public'))
 app.use('/dist', express.static('dist'))
@@ -18,6 +15,4 @@ app.get('*', function (req, res) {
   )
 })
 
-app.listen(port, function () {
-  console.log('Server running at localhost:' + port)
-})
+app.listen(8080)

@@ -7,14 +7,14 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   let { type, payload } = action
-  
+
   switch(type) {
     case 'FETCH_GENRES': {
       return { ...state, fetching: true, fetched: false }
     }
 
     case 'FETCH_GENRES_FULFILLED': {
-      return { 
+      return {
         ...state,
         fetched: true,
         fetching: false,
