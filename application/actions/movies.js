@@ -1,5 +1,6 @@
 import 'whatwg-fetch'
 import { API_URL, API_KEY } from '../config'
+import types from '../constants/actionTypes'
 
 const fetchMoviesByGenre = (genreId) => {
   const apiUrl = API_URL
@@ -8,7 +9,7 @@ const fetchMoviesByGenre = (genreId) => {
   let api_endpoint = `${apiUrl}/genre/${genreId}/movies?api_key=${apiKey}&language=en-US`
 
   return {
-    type: 'FETCH_MOVIES',
+    type: types.FETCH_MOVIES,
     payload: new Promise(resolve => {
       fetch(api_endpoint).then(response => {
         resolve(response.json())
