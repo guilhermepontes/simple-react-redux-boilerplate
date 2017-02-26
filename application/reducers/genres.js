@@ -1,3 +1,5 @@
+import types from '../constants/actionTypes'
+
 const initialState = {
   genres: [],
   fetching: false,
@@ -9,11 +11,11 @@ const reducer = (state = initialState, action) => {
   let { type, payload } = action
 
   switch(type) {
-    case 'FETCH_GENRES': {
+    case types.FETCH_GENRES_PENDING: {
       return { ...state, fetching: true, fetched: false }
     }
 
-    case 'FETCH_GENRES_FULFILLED': {
+    case types.FETCH_GENRES_FULFILLED: {
       return {
         ...state,
         fetched: true,
@@ -22,7 +24,7 @@ const reducer = (state = initialState, action) => {
       }
     }
 
-    case 'FETCH_GENRES_REJECTED': {
+    case types.FETCH_GENRES_REJECTED: {
       return { ...state, fetching: false, error: payload }
     }
 
