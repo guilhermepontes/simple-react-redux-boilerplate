@@ -7,7 +7,7 @@ import NotFoundComponent from '../../application/containers/NotFoundPage'
 
 context('<NotFoundPage />', () => {
   describe('Content', () => {
-    xit('should render a not found text', () => {
+    it('should render a not found text', () => {
       const wrapper = shallow(<NotFoundComponent />)
       expect(wrapper.text()).toEqual('Not found')
     })
