@@ -7,7 +7,7 @@ import AboutPage from './containers/AboutPage'
 import NotFoundPage from './containers/NotFoundPage'
 
 const routes = (
-  <Route path="/" component={Root}>
+  <Route path="/simple-react-redux-boilerplate" component={Root}>
     <IndexRoute component={HomePage}/>
     <Route path="/about" component={AboutPage} />
 
