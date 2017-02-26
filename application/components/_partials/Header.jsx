@@ -13,15 +13,15 @@ class Header extends Component {
 
         <ul className={bem('nav')}>
           <li className={bem('nav-item')}>
-            <NavLink className={bem('nav-link')} to="/" onlyActiveOnIndex>Home</NavLink>
+            <NavLink className={bem('nav-link')} to="/simple-react-redux-boilerplate/" onlyActiveOnIndex>Home</NavLink>
           </li>
 
           <li className={bem('nav-item')}>
-            <NavLink className={bem('nav-link')} to="/about">About</NavLink>
+            <NavLink className={bem('nav-link')} to="/simple-react-redux-boilerplate/about">About</NavLink>
           </li>
 
           <li className={bem('nav-item')}>
-            <NavLink className={bem('nav-link')} to="/404">404</NavLink>
+            <NavLink className={bem('nav-link')} to="/simple-react-redux-boilerplate/404">404</NavLink>
           </li>
         </ul>
       </header>
