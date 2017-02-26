@@ -13,8 +13,7 @@ const mainPath = (process.env.NODE_ENV !== 'production')
 const routes = (
   <Route path={mainPath} component={Root}>
     <IndexRoute component={HomePage}/>
-    <Route path="/about" component={AboutPage} />
-
+    <Route path="about" component={AboutPage} />
     <Route path="*" component={NotFoundPage} />
   </Route>
 )
