@@ -13,7 +13,7 @@ const fetchGenres = () => {
     payload: new Promise((resolve, reject) => {
       fetch(api_endpoint)
         .then(r => resolve(r.json()))
-        .catch(err => reject(err))
+        .catch(reject)
     })
   }
 }
