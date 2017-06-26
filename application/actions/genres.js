@@ -11,9 +11,7 @@ const fetchGenres = () => {
   return {
     type: types.FETCH_GENRES,
     payload: new Promise((resolve, reject) => {
-      fetch(api_endpoint)
-        .then(r => resolve(r.json()))
-        .catch(reject)
+      fetch(api_endpoint).then(r => resolve(r.json())).catch(reject)
     })
   }
 }
