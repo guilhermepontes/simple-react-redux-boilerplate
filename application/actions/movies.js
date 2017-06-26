@@ -11,9 +11,7 @@ const fetchMoviesByGenre = (genreId) => {
   return {
     type: types.FETCH_MOVIES,
     payload: new Promise((resolve, reject) => {
-      fetch(api_endpoint)
-        .then(r => resolve(r.json()))
-        .catch(err => reject(err))
+      fetch(api_endpoint).then(r => resolve(r.json())).catch(reject)
     })
   }
 }
