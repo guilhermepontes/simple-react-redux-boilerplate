@@ -1,4 +1,3 @@
-// Genres
 export default {
   // genres
   FETCH_GENRES: 'FETCH_GENRES',
