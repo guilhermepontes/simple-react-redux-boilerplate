@@ -10,9 +10,9 @@ class MovieListComponent extends Component {
 
     movies = movies.slice(0, 5)
 
-    return movies.map((movie, index) => {
-      return <MovieItem key={index} movie={movie} />
-    })
+    return movies.map((movie, index) =>
+      <MovieItem key={index} movie={movie} />
+    )
   }
 
   showLoading(state) {
